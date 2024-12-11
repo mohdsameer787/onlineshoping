@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+}
+
+body{
+
+    background-color: #feeaea;
+}
+.bd{
+    border: solid black 2px;  
+}
+
+.gridcontainer{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:10vh 80vh 10vh;
+
+}
+.header{
+    grid-column: 1/4;
+   
+
+}
+.main{
+   
+    align-items: center;
+    
+  overflow: scroll;
+  justify-content: space-around ;
+  scroll-behavior: smooth;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-column: 1/4;
+}
+
+.footer{
+   
+    grid-column: 1/4;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+border-radius: 17px;
+    background-color: #fff;
+    width: 250px;
+    height: 390px;
+}
+
+.card img{
+height: 200px;
+width: 210px;
+  border-radius: 17px;
+  margin-top: 10px;
+
+
+}
+
+.text{
+    
+   margin-left: 22px;
+   margin-right: 10px;
+
+    font-size: 0.8rem;
+}
+.button{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+     width: 220px;
+    justify-content: space-between;
+}
+.price{
+    margin-right: 150px;
+}
+.cardtittle{
+    margin-top: 12px;
+    margin-right: 90px;
+    display: block;
+    font-size: 1.5em;
+    
+    margin-block-end: 0.83em;
+    
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.font{
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 26px;
+    margin-top: 5px;
+}
+.cart{
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 35px;
+    background-color:#ffc5c5;
+}
+.cart img{
+    height: 30px;padding-bottom: 10px;
+}
+@media only screen and (max-width: 548px){
+
+    .card{
+        display: flex;
+        
+            flex-direction: column;
+            align-items: center;
+            border-radius: 17px;
+            background-color: #fff;
+            width: 147px;
+            height: 277px;
+    }
+    .text{
+        margin-left: 18px;
+        margin-right: 10px;
+        font-size: 0.6rem;
+    }
+
+     .card img{
+        height: 132px;
+        width: 130px;
+        border-radius: 17px;
+        margin-top: 10px;
+        }
+        .button{
+            margin-top: 10px;
+            display: flex
+        ;
+            align-items: center;
+            width: 138px;
+            justify-content: space-between
+        }
+      
+        .cart{
+            border-radius: 23px;
+          font-size: small;
+            width: 60px;
+            height: 25px;
+           
+        }
+        .font{
+            font-size: 1em;
+    font-weight: bold;
+    margin-right: -40px;
+    margin-left: 27px;
+    margin-top: 3px;
+        }
+        .cart img{
+            height: 20px;
+            padding-bottom: 10px;
+        }
+        .cardtittle{
+            margin-top: 14px;
+            margin-right: 23px;
+            display: block;
+            font-size: 1.1em;
+            margin-block-end: 0.2em;
+            font-weight: bold;
+            unicode-bidi: isolate;
+        }
+
+
+    
+}
